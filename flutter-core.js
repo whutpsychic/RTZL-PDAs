@@ -52,7 +52,7 @@ fc.printBarcode = (str) => {
 		return;
 	}
 
-	window.PDAPrintBarcode.postMessage(info);
+	window.PDAPrintBarcode.postMessage(str);
 };
 
 fc.printQRcode = (str) => {
@@ -60,12 +60,12 @@ fc.printQRcode = (str) => {
 		throw new Error("您向打印二维函数传送的参数不是一个字符串!");
 	if (!window.PDAPrintBarcode) {
 		alert(
-			"您所在的位置于flutter端没有注册打印条码的方法，请先注册再使用，或者联系zbc！"
+			"您所在的位置于flutter端没有注册打二维码的方法，请先注册再使用，或者联系zbc！"
 		);
 		return;
 	}
 
-	window.PDAPrintQRcode.postMessage(info);
+	window.PDAPrintQRcode.postMessage(str);
 };
 
 export default fc;
