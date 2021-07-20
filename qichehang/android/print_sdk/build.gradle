@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    sourceSets.main.jniLibs.srcDirs = ['libs']
+
+    android.libraryVariants.all{ variant ->
+        variant.outputs.all{
+            def fileName = "printer_release_v1.0_4.aar"
+            outputFileName = fileName
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation files('libs\\core_3.4.0.jar')
+    //implementation 'com.github.promeg:tinypinyin:1.0.0'
+    //implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    //implementation 'com.google.zxing:core:3.3.3'
+}
+
