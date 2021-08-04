@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.device.ScanDevice;
 import android.os.Bundle;
-import com.rtzl.qichehang.PrintContract;
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -14,7 +13,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
 import com.example.print_sdk.PrintUtil;
-// import com.example.print_sdk.interfaces.OnPrintEventListener;
+import com.rtzl.qichehang.PrintContract;
 
 public class MainActivity extends FlutterActivity {
 

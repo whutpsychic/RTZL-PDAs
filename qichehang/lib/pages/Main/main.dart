@@ -20,12 +20,14 @@ class MainPageState extends State<MainPage> {
     scannerChannel.setMethodCallHandler((resultCall) {
       // 处理原生 Android iOS 发送过来的消息
       MethodCall call = resultCall;
-      // String method = call.method;
+      String method = call.method;
       String arguments = call.arguments;
       // print(method);
+      // print(" ========================== ");
       // print(arguments);
+      // print(" ========================== ");
 
-      _webViewController?.evaluateJavascript('onScan($arguments)');
+      _webViewController?.evaluateJavascript('onScan("$arguments")');
 
       return Future.delayed(Duration(seconds: 1), () {});
     });
