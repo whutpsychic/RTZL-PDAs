@@ -112,6 +112,8 @@ class MainPageState extends State<MainPage> {
             print(" ======================= ");
             if (mainInfo == "componentDidMount") {
               // _webViewController.evaluateJavascript('');
+            } else if (mainInfo == "ipconfig") {
+              Navigator.of(context).pushNamed("/ip-config");
             }
           });
 

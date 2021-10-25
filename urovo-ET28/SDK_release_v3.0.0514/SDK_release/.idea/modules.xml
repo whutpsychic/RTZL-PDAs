@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ApplicationTest/ApplicationTest.iml" filepath="$PROJECT_DIR$/ApplicationTest/ApplicationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BarcodeScan/BarcodeScan.iml" filepath="$PROJECT_DIR$/BarcodeScan/BarcodeScan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BarcodeScanConfig/BarcodeScanConfig.iml" filepath="$PROJECT_DIR$/BarcodeScanConfig/BarcodeScanConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeviceManager/DeviceManager.iml" filepath="$PROJECT_DIR$/DeviceManager/DeviceManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DupktTest/DupktTest.iml" filepath="$PROJECT_DIR$/DupktTest/DupktTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ICCManager/ICCManager.iml" filepath="$PROJECT_DIR$/ICCManager/ICCManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MagManager/MagManager.iml" filepath="$PROJECT_DIR$/MagManager/MagManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PASMDemo/PASMDemo.iml" filepath="$PROJECT_DIR$/PASMDemo/PASMDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PICCManager/PICCManager.iml" filepath="$PROJECT_DIR$/PICCManager/PICCManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PinPad/PinPad.iml" filepath="$PROJECT_DIR$/PinPad/PinPad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SDKLibrary/SDKLibrary.iml" filepath="$PROJECT_DIR$/SDKLibrary/SDKLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SDK_release.iml" filepath="$PROJECT_DIR$/SDK_release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SLE4442/SLE4442.iml" filepath="$PROJECT_DIR$/SLE4442/SLE4442.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keymapDemo/keymapDemo.iml" filepath="$PROJECT_DIR$/keymapDemo/keymapDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/printer/printer.iml" filepath="$PROJECT_DIR$/printer/printer.iml" />
+    </modules>
+  </component>
+</project>
