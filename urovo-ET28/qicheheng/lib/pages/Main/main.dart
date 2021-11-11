@@ -24,11 +24,16 @@ class MainPageState extends State<MainPage> {
     BroadcastChannel.setMethodCallHandler((resultCall) async {
       // 处理原生 Android iOS 发送过来的消息
       MethodCall call = resultCall;
-      // String method = call.method;
       String arguments = call.arguments;
 
       _webViewController?.evaluateJavascript('onScan("$arguments")');
+
+      if (arguments == "zbc0012 is here") _ipconfig();
     });
+  }
+
+  _ipconfig() {
+    Navigator.of(context).pushNamed("/ip-config");
   }
 
   _loadUp() {
@@ -101,7 +106,7 @@ class MainPageState extends State<MainPage> {
             if (mainInfo == "componentDidMount") {
               // _webViewController.evaluateJavascript('');
             } else if (mainInfo == "ipconfig") {
-              Navigator.of(context).pushNamed("/ip-config");
+              _ipconfig();
             }
           });
 }

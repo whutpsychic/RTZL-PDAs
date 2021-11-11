@@ -2,5 +2,5 @@
 This is rtzl's PDA softwares repository.
 All apps are based on flutter here.
 
-urovo - 优博讯
-
+Urovo - 优博讯
+CNIST - 英斯腾
