@@ -7,6 +7,9 @@ import android.util.Log;
 import com.example.print_sdk.PrintUtil;
 import com.example.print_sdk.enums.ALIGN_MODE;
 
+import com.rtzl.qicheheng.BitmapUtils;
+import com.google.zxing.BarcodeFormat;
+
 public class PrintContract {
 
   private Context mContext;
@@ -35,6 +38,9 @@ public class PrintContract {
   }
 
   public void printQRcode(String text) {
-    pUtil.printQR2 (8, 3, 49, ALIGN_MODE.ALIGN_CENTER, text);
+    // pUtil.printQR2 (8, 3, 49, ALIGN_MODE.ALIGN_CENTER, text);
+    Bitmap bitmap=BitmapUtils.encode2dAsBitmap (text, 200, 200, 2);
+    pUtil.printQR(bitmap);
+    pUtil.printLine(3);
   }
 }
