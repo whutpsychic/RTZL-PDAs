@@ -1,2 +1,0 @@
-com.example.print_sdk
-string app_name
