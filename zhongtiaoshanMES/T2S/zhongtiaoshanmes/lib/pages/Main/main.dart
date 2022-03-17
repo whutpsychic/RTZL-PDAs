@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import '../../core/dimensions.dart';
@@ -24,11 +26,17 @@ class MainPageState extends State<MainPage> {
         .then((result) {
       // 之后
       // print("-=-=-=-=-=-=-=-=-=-=-=- result -=-=-=-=-=-=-=-=-=-=-=");
-      List arr = [];
+      // print(result);
+      List<List> arr = [];
       for (int i = 0; i < result.length; i++) {
-        arr.add(result[0]);
+        List<dynamic> _result = [];
+        result[i].forEach((v) {
+          _result.add('"$v"');
+        });
+        arr.add(_result);
       }
-      _webViewController!.runJavascript('window.rtzlPDAResult = $arr');
+      // print(arr);
+      _webViewController!.runJavascript('window.rtzlPDAResult = ${arr}');
       _webViewController!.runJavascript('onReceive()');
     });
   }
