@@ -27,10 +27,10 @@ class _ScanPreviewState extends State<ScanPreview> {
       MethodCall call = resultCall;
       String method = call.method;
       var arguments = call.arguments;
-      print(" ============ method ============== ");
-      print(method);
-      print(" ============ arguments ============== ");
-      print(arguments);
+      // print(" ============ method ============== ");
+      // print(method);
+      // print(" ============ arguments ============== ");
+      // print(arguments);
 
       if (arguments is List && arguments.isNotEmpty) {
         // 结束摄像
@@ -85,7 +85,7 @@ class _ScanPreviewState extends State<ScanPreview> {
 
   @override
   void dispose() {
-    print(" --------------========== hey dispose --------------========== ");
+    // print(" --------------========== hey dispose --------------========== ");
     controller.dispose();
     super.dispose();
   }
@@ -103,6 +103,20 @@ class _ScanPreviewState extends State<ScanPreview> {
           height: _h,
           child: Stack(
             children: [
+              Positioned(
+                top: 0,
+                left: 0,
+                child: Container(
+                  width: _w,
+                  height: 100,
+                  alignment: Alignment.centerLeft,
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: GestureDetector(
+                      onTap: () => Navigator.of(context).pop(),
+                      child: const Icon(Icons.navigate_before,
+                          size: 36, color: Colors.white)),
+                ),
+              ),
               CameraPreview(controller),
               Positioned(
                 bottom: 0,

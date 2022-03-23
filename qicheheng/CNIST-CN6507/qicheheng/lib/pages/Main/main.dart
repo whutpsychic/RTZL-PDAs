@@ -111,9 +111,9 @@ class MainPageState extends State<MainPage> {
           name: 'traceback',
           onMessageReceived: (JavascriptMessage msg) {
             String mainInfo = msg.message;
-            print(" ======================= ");
-            print(mainInfo);
-            print(" ======================= ");
+            // print(" ======================= ");
+            // print(mainInfo);
+            // print(" ======================= ");
             if (mainInfo == "componentDidMount") {
               // _webViewController.evaluateJavascript('');
             } else if (mainInfo == "ipconfig") {
