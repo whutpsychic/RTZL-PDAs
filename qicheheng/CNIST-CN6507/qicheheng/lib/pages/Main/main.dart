@@ -45,6 +45,12 @@ class MainPageState extends State<MainPage> {
     printerChannel.invokeMethod('printQRcode', qrcode);
   }
 
+  // 调试用
+  void _setValue() {
+    var args = ModalRoute.of(context)?.settings.arguments;
+    printerChannel.invokeMethod('setSize', args);
+  }
+
   _loadUp() {
     LocalStorage.getValue('request_type').then((_requestType) {
       if (_requestType == "uri") {
@@ -71,6 +77,10 @@ class MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
     nativeMessageListener();
+    //
+    Future.delayed(Duration(seconds: 1), () {
+      _setValue();
+    });
   }
 
   @override

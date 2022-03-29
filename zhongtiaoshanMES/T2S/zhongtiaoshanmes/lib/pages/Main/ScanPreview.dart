@@ -103,12 +103,14 @@ class _ScanPreviewState extends State<ScanPreview> {
           height: _h,
           child: Stack(
             children: [
+              CameraPreview(controller),
               Positioned(
                 top: 0,
                 left: 0,
                 child: Container(
                   width: _w,
                   height: 100,
+                  decoration: const BoxDecoration(color: Colors.transparent),
                   alignment: Alignment.centerLeft,
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: GestureDetector(
@@ -117,7 +119,6 @@ class _ScanPreviewState extends State<ScanPreview> {
                           size: 36, color: Colors.white)),
                 ),
               ),
-              CameraPreview(controller),
               Positioned(
                 bottom: 0,
                 left: 0,
@@ -125,6 +126,7 @@ class _ScanPreviewState extends State<ScanPreview> {
                   width: _w,
                   height: 100,
                   alignment: Alignment.center,
+                  decoration: const BoxDecoration(color: Colors.transparent),
                   child: GestureDetector(
                     onTap: takePicture,
                     child: Container(

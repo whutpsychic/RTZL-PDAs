@@ -7,6 +7,7 @@ import "./UI/Spin/main.dart";
 // ------------ pages ------------
 import "./pages/Main/main.dart";
 import "./pages/IpConfig/main.dart";
+import "./pages/configer/main.dart";
 
 void main() {
   // 如果你想在 runApp() 之前调用一些代码，那么你就需要调这一行代码以开路
@@ -29,10 +30,11 @@ class Main extends StatelessWidget {
     checkoutNetConnection();
 
     return new MaterialApp(
-      initialRoute: "/main",
+      initialRoute: "/ip-config",
       routes: {
         '/main': (context) => MainPage(),
         "/ip-config": (context) => IpConfig(),
+        "/configer": (context) => Configer(),
       },
       builder: Spin.init(),
     );

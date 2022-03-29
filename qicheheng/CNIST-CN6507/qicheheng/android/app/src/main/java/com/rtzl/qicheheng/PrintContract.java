@@ -37,9 +37,9 @@ public class PrintContract {
     pUtil.printBarcode(text, 200, 300);
   }
 
-  public void printQRcode(String text) {
+  public void printQRcode(String text,int size) {
     // pUtil.printQR2 (8, 3, 49, ALIGN_MODE.ALIGN_CENTER, text);
-    Bitmap bitmap=BitmapUtils.encode2dAsBitmap (text, 200, 200, 2);
+    Bitmap bitmap=BitmapUtils.encode2dAsBitmap (text, size, size, 2);
     pUtil.printQR(bitmap);
     pUtil.printLine(3);
   }

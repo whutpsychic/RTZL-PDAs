@@ -25,6 +25,8 @@ public class MainActivity extends FlutterActivity {
   private PrintUtil pUtil;
   private PrintContract printContract;
 
+  private static int size = 200;
+
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -87,7 +89,11 @@ public class MainActivity extends FlutterActivity {
             printContract.printBarcode(barcode);
           }else if (call.method.equals("printQRcode")){
             String qrcode = call.arguments.toString().trim();
-            printContract.printQRcode(qrcode);
+            printContract.printQRcode(qrcode, size);
+          }else if (call.method.equals("setSize")){
+            String _size = call.arguments.toString().trim();
+            int _size_ = Integer.valueOf(_size).intValue();
+            size = _size_;
           }
         }
       }

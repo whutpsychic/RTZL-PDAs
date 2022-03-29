@@ -197,7 +197,7 @@ class _IpConfigState extends State<IpConfig> {
                                     : "https";
                             _setHttpType();
                             if (_character == SingingCharacter.url_port) {
-                              Navigator.of(context).pushNamed("/main",
+                              Navigator.of(context).pushNamed("/configer",
                                   arguments: {
                                     "url":
                                         "$httpType://${_urlController.text}:${_portController.text}"
