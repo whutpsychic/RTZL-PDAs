@@ -29,7 +29,7 @@ class Main extends StatelessWidget {
     checkoutNetConnection();
 
     return MaterialApp(
-      initialRoute: "/main",
+      initialRoute: "/ip-config",
       routes: {
         '/main': (context) => MainPage(),
         "/ip-config": (context) => IpConfig(),

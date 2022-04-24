@@ -14,6 +14,7 @@ import io.flutter.plugin.common.MethodChannel.Result;
 
 import com.example.print_sdk.PrintUtil;
 import com.rtzl.qichehang.PrintContract;
+import java.util.List;
 
 public class MainActivity extends FlutterActivity {
 
@@ -98,5 +99,30 @@ public class MainActivity extends FlutterActivity {
         }
       }
     );
+
+    // mMethodChannel2.setMethodCallHandler(
+    //   new MethodChannel.MethodCallHandler() {
+    //     @Override
+    //     public void onMethodCall(MethodCall call, MethodChannel.Result result) {
+    //       if (call.method.equals("printBarcode")) {
+    //         String barcode = call.arguments.toString().trim();
+    //         printContract.printBarcode(barcode);
+    //       }else if (call.method.equals("printQRcode")){
+    //         String allArgs = call.arguments.toString().trim();
+
+    //         String[] arr = allArgs.split(",");
+    //         int offset = Integer.valueOf(arr[0]).intValue();
+    //         int height = Integer.valueOf(arr[1]).intValue();
+    //         String qrcode = arr[2];
+
+    //         printContract.printQRcode(offset, height,qrcode);
+    //       }else if (call.method.equals("setSize")){
+    //         String _size = call.arguments.toString().trim();
+    //         int _size_ = Integer.valueOf(_size).intValue();
+    //         size = _size_;
+    //       }
+    //     }
+    //   }
+    // );
   }
 }

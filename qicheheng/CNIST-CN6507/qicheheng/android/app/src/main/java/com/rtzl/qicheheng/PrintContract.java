@@ -6,9 +6,12 @@ import android.util.Log;
 
 import com.example.print_sdk.PrintUtil;
 import com.example.print_sdk.enums.ALIGN_MODE;
+import com.example.print_sdk.enums.MODE_ENLARGE;
 
 import com.rtzl.qicheheng.BitmapUtils;
 import com.google.zxing.BarcodeFormat;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class PrintContract {
 
@@ -26,10 +29,12 @@ public class PrintContract {
     // 打印布局（居中）
     pUtil.printAlignment(ALIGN_MODE.ALIGN_CENTER);
     pUtil.printEnableCertificate(true);
-    pUtil.printEnableMark(false);
+    pUtil.printEnableMark(true);
     pUtil.printAutoEnableMark(true);
     pUtil.printLanguage(15);
     pUtil.printEncode(3);
+    pUtil.printFontSize(MODE_ENLARGE.NORMAL); 
+    pUtil.printTextBold (true);
     // pUtil.getVersion();
   }
 
@@ -38,9 +43,20 @@ public class PrintContract {
   }
 
   public void printQRcode(String text,int size) {
-    // pUtil.printQR2 (8, 3, 49, ALIGN_MODE.ALIGN_CENTER, text);
-    Bitmap bitmap=BitmapUtils.encode2dAsBitmap (text, size, size, 2);
+    Bitmap bitmap=BitmapUtils.encode2dAsBitmap (text, 200, 200, 2);
+    // try{
+    //   Thread.sleep(2000);
+    // } catch(Exception e){
+    // }
     pUtil.printQR(bitmap);
-    pUtil.printLine(3);
-  }
+    pUtil.printLargeText(text);
+    pUtil.printLine(5);
+    // pUtil.printText(text);
+    // pUtil.printLine(7);
+}
+
+  // public void printQRcode(int offset,int height,String text){
+  //   pUtil.printQR(offset,height,text);
+  //   // pUtil.printQR(text);
+  // }
 }
