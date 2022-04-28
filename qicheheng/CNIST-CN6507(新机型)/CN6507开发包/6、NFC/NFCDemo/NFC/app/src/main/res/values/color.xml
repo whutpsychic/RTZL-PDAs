@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="pink">#FF00FF</color>
+    <color name="blue">#0000C6</color>
+    <color name="green">#00BB00</color>
+    <color name="black">#000000</color>
+    <color name="red">#CE0000</color>
+    <color name="gray_12">#5B5B5B</color>
+    <color name="gray_7">#BEBEBE</color>
+    <color name="juse">#FFB84D</color>
+    <color name="blue_color">#7FC0D8</color>
+    <color name="end_color">#DBDBD9</color>
+    <color name="light_gray">#ECFFFF</color>
+    <color name="light_green">#99CC33</color>
+    <!-- 淡灰色 -->
+    <color name="gray_s">#e1e1e1</color>
+    <!-- 按钮失去效果颜色 -->
+    <color name="enable_false">#9D9D9D</color>
+    <!-- 购物车list颜色 -->
+    <color name="shop_list_color">#e1e1e1</color>
+    
+    <!-- 库存查询颜色 -->
+	<color name="light_pink">#F5A9E1</color>
+	<color name="light_blue">#A9F5F2</color>
+	  <color name="titleblack">#ff3a3a3a</color>
+	   <!-- 中通蓝 -->
+ <color name="ZTOblue">#6dcff6</color>
+    
+   <!--  分隔线-->
+   <color name="back_color">#FFB84D</color>
+</resources>

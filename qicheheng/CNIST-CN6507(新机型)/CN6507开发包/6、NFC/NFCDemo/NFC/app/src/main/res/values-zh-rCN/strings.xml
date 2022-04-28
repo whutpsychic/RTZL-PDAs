@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">NFC</string>
+    <string name="card_type">卡类型:</string>
+    <string name="card_number">卡号:</string>
+    <string name="auth_key">密钥:</string>
+    <string name="block_index">块号:</string>
+    <string name="card_content">内容:</string>
+    <string name="op_clear">清空</string>
+    <string name="op_read">读取</string>
+    <string name="op_write">写入</string>
+    <string name="op_modify_key">修改密钥</string>
+    <string name="alert_input_blockindex">请输入块号!</string>
+    <string name="alert_auth_block">此块是密钥块!</string>
+    <string name="alert_auth_err">密钥错误!</string>
+    <string name="alert_write_err">写入失败!</string>
+    <string name="alert_read_err">读取失败!</string>
+    <string name="alert_not_auth_block">此块不是秘钥块！</string>
+    <string name="modify_ok">修改成功！</string>
+</resources>

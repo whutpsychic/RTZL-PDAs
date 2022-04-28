@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">NFCDEMO</string>
+    <string name="card_type">Card Type</string>
+    <string name="card_number">Card Number</string>
+    <string name="auth_key">Authentication key</string>
+    <string name="block_index">BlockIndex</string>
+    <string name="card_content">Content</string>
+    <string name="op_clear">Clear</string>
+    <string name="op_read">Read</string>
+    <string name="op_write">Write</string>
+    <string name="op_modify_key">Modify Key</string>
+    <string name="alert_input_blockindex">Please input blockindex</string>
+    <string name="alert_auth_block">Key block!</string>
+    <string name="alert_auth_err">key Error!</string>
+    <string name="alert_write_err">Write Failed!</string>
+    <string name="alert_read_err">Read Failed!</string>
+    <string name="alert_not_auth_block">Not key block!</string>
+    <string name="modify_ok">Modify Successfully!</string>
+</resources>
