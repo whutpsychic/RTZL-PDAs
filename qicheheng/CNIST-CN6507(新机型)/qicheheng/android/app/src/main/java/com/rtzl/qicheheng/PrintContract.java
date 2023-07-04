@@ -1,4 +1,4 @@
-package com.rtzl.qichehang;
+package com.rtzl.qicheheng;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -40,14 +40,11 @@ public class PrintContract {
   }
 
   public void printQRcode(String text) {
-    // Bitmap bitmap=BitmapUtils.encode2dAsBitmap (text, 200, 200, 2);
-    // try{
-    //   Thread.sleep(2000);
-    // } catch(Exception e){
-    // }
-    pUtil.printQR(PrintConfig.Align.ALIGN_CENTER, 200, text);
-    pUtil.printText(PrintConfig.Align.ALIGN_CENTER, PrintConfig.FontSize.TOP_FONT_SIZE_XLARGE, true, true, text);
-    pUtil.printLine(5);
+    // pUtil.printQR(PrintConfig.Align.ALIGN_CENTER, 200, text);
+    pUtil.printQR(PrintConfig.Align.ALIGN_CENTER, 120, text);
+    pUtil.printText(PrintConfig.Align.ALIGN_CENTER, PrintConfig.FontSize.TOP_FONT_SIZE_MIDDLE, true, true, text);
+    // pUtil.printLine(5);
+    pUtil.printLine(1);
     pUtil.start();
     // pUtil.printText(text);
     // pUtil.printLine(7);

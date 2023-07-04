@@ -5,16 +5,16 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('G:\\Jx_work\\签名证书\\lckj.jks')
-            storePassword 'lckj20210302#'
-            keyAlias 'key0'
-            keyPassword 'lckj20210302#'
+            storeFile file('.\\fmct-keystore.jks')
+            storePassword 'fmct2023'
+            keyAlias 'fmct'
+            keyPassword 'fmct2023'
         }
         release{
-            storeFile file('G:\\Jx_work\\签名证书\\lckj.jks')
-            storePassword 'lckj20210302#'
-            keyAlias 'key0'
-            keyPassword 'lckj20210302#'
+            storeFile file('.\\fmct-keystore.jks')
+            storePassword 'fmct2023'
+            keyAlias 'fmct'
+            keyPassword 'fmct2023'
         }
     }
     compileSdkVersion 30

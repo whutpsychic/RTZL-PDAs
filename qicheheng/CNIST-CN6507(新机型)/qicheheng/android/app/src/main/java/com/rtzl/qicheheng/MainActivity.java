@@ -13,7 +13,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
 import com.example.lc_print_sdk.PrintUtil;
-import com.rtzl.qichehang.PrintContract;
+import com.rtzl.qicheheng.PrintContract;
 import java.util.List;
 
 public class MainActivity extends FlutterActivity {
