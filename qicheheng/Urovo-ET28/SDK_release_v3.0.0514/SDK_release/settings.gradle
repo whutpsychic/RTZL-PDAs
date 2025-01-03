@@ -1,1 +1,0 @@
-include ':ApplicationTest', ':SDKLibrary', ':printer', ':BarcodeScan', ':BarcodeScanConfig', ':SLE4442', ':DeviceManager', ':ICCManager', ':MagManager', ':keymapDemo', ':PASMDemo', ':PICCManager', ':PinPad', ':DupktTest'
