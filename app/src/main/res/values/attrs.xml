@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TopBar-->
+    <declare-styleable name="TopBar">
+        <attr name="title" format="string" />
+        <attr name="canPop" format="boolean" />
+    </declare-styleable>
+    <!--没用的-->
+    <declare-styleable name="xxxxx">
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
